@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Φόρμα Πληρωμής</h1>
+        <p>Τα υποχρεωτικά πεδία ακολλουθούνται από <abbr title="Required field">*</abbr></abbr></p>
+        <h2>Προσωπικά Στοιχεία</h2>
+        <fieldset>
+            <legend>Type</legend>
+                <input type="radio" id="mr" name="title">
+                <label for="mr">Mr.</label>
+                <input type="radio" id="mrs" name="title">
+                <label for="mrs">Mrs.</label>    
+                <input type="radio" id="dr" name="title">
+                <label for="dr">Dr.</label>    
+        </fieldset>
+        <div>
+            <label for="name">Name:<abbr title="Required field">*</abbr></label>
+            <input type="text" id="name" required>
+        </div>
+        <div>
+            <label for="email">E-mail:<abbr title="Required field">*</abbr></label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password:<abbr title="Required field">*</abbr></label>   
+            <input type="password" id="password" required>
+        </div>
+        <h2>Πληροφορίες Πληρωμής</h2>
+        <div>
+            <label for="card">Card type:</label>
+            <select id="cardtype">
+                <option id="cardtype" value="v">Visa</option>
+                <option id="cardtype" value="o">Other</option>
+            </select>
+                </td>
+        </div>
+        <div>
+            <label for="cardnumber">Card number:<abbr title="Required field">*</abbr></label>
+            <input type="text" id="cardnumber">
+        </div>
+        <div>
+            <label for="exp">Expiration date:<abbr title="Required field">*</abbr></abbr></label>
+            <input type="text" id="exp" placeholder="MM/YY">
+        </div>
+        <div>
+            <button type="submit">Προχωρήστε στην πληρωμή</button>
+        </div>
+    </form>
+</body>
+</html>

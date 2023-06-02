@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Φόρμα Πληρωμής</h1>
+        <p>Τα υποχρεωτικά πεδία ακολλουθούνται από <abbr title="Required field">*</abbr></abbr></p>
+        <h2>Προσωπικά Στοιχεία</h2>
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <fieldset>
+                    <legend>Type</legend>
+                    <input type="radio" id="mr" name="title">
+                    <label for="mr">Mr.</label>
+                    <input type="radio" id="mrs" name="title">
+                    <label for="mrs">Mrs.</label>    
+                    <input type="radio" id="dr" name="title">
+                    <label for="dr">Dr.</label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name:<abbr title="Required field">*</abbr></label>
+                </td>
+                <td>
+                    <input type="text" id="name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">E-mail:<abbr title="Required field">*</abbr></label>
+                </td>
+                <td>
+                    <input type="email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:<abbr title="Required field">*</abbr></label>   
+                </td>
+                <td>
+                    <input type="password" id="password" required>
+                </td>
+            </tr>
+        </table>
+        <h2>Πληροφορίες Πληρωμής</h2>
+        <table>
+            <tr>
+                <td>
+                    <label for="card">Card type:</label>
+                </td>
+                <td>
+                    <select id="cardtype">
+                        <option id="cardtype" value="visa">Visa</option>
+                        <option id="cardtype" value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cardnumber">Card number:<abbr title="Required field">*</abbr></label>
+                </td>
+                <td>
+                    <input type="text" id="cardnumber">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="exp">Expiration date:<abbr title="Required field">*</abbr></abbr></label>
+                </td>
+                <td>
+                    <input type="text" id="exp" placeholder="MM/YY">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button type="submit">Προχωρήστε στην πληρωμή</button>
+                </th>
+            </tr>
+        </table>
+    </div>
+</form>
+</body>
+</html>
